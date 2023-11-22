@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script lang="Javascript">
+      function ubahWarnaLB(warna){
+          document.bgColor = warna;
+      }
+      function ubahWarnaLD(warna){
+          document.fgColor=warna;
+      }
+    </script>
+    <h1>TEST</h1>
+    <form action="">
+      <input
+        type="button"
+        value="LATAR BELAKANG HIJSU"
+        onclick="ubahWarnaLB('GREEN')" />
+
+      <input
+        type="button"
+        value="LATAR BELAKANG PUTIH"
+        onclick="ubahWarnaLB('WHITE')" />
+
+      <input
+        type="button"
+        value="TEKS KUNING"
+        onclick="ubahWarnaLD('YELLOW')" />
+
+      <input type="button" value="TEKS BIRU" onclick="ubahWarnaLD('BLUE')" />
+    </form>
+  </body>
+</html>
