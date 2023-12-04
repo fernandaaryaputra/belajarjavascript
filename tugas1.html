@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/Javascript" src="jquery-3.7.1.js"></script>
+    <script type="text/Javascript">
+      $(document).ready(function () {
+          $(".create").click(function () {
+              $(".table").show("slow");
+          $(".no").click(function () {
+               $(".table").hide("slow");
+          });
+
+          });
+
+      });
+      $(document).ready(function () {
+        $(".showgambar").click(function () {
+            $("#foto").show("slow");
+            $(".hidegambar").click(function () {
+                $("#foto").hide("slow");
+
+            });
+
+        });
+
+      });
+    </script>
+    <style type="text/css">
+      .table {
+        background-color: green;
+      }
+      .table img {
+        width: 90%;
+      }
+    </style>
+  </head>
+  <body>
+    <p>seilahkan edit data ini</p>
+    <button class="create">Create</button>
+    <button class="no">hide</button>
+    <div class="table">
+      <p>Nama Fernadna arya putra</p>
+      <p>Kelas :3B</p>
+      <p>Nim :22040118</p>
+      <button class="showgambar">show</button>
+      <button class="hidegambar">Hide</button>
+      <img src="SAVE_20200811_233126.jpg" alt="" id="foto" />
+    </div>
+  </body>
+</html>

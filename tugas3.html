@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery-3.7.1.js" type="text/Javascript"></script>
+    <script type="text/Javascript">
+      $(document).ready(function () {
+          $(".fadein").click(function () {
+              $(".kotak").show("slow");
+              $(".fadeout").click(function () {
+                  $(".kotak").hide("slow");
+                setTimeout(function () {
+                    $(".fade3").fadeOut("slow", function () {
+                        $(".kotak").hide();
+
+                    })
+
+                }, 3000)
+              });
+
+          });
+
+      });
+    </script>
+    <style type="text/css">
+      .kotak {
+        width: 200px;
+        height: 150px;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="kotak"></div>
+    <button class="fadein">Fade IN</button>
+    <button class="fadeout">Fade Out</button>
+    <button class="fade3">fade 3 detik</button>
+  </body>
+</html>

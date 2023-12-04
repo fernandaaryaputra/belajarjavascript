@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/Javascript" src="jquery-3.7.1.js"></script>
+    <script type="text/Javascript">
+      $(document).ready(function() {
+          $(".sembunyi").click(function() { $("#foto").hide("slow");
+          $(".tampil").click(function() { $("#foto").show("slow");
+
+          });
+
+          });
+
+      });
+    </script>
+  </head>
+  <body>
+    <button class="sembunyi">sembunyikan</button>
+    <button class="tampil">Tampilkan</button>
+    <p>
+      <img src="SAVE_20200811_233126.jpg" alt="" id="foto" />
+    </p>
+  </body>
+</html>
